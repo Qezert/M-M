@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Car
+comment1.params=color
+comment1.target=Car(java.lang.String)
+comment2.params=pressure
+comment2.target=void\ accelerate(int)
+comment3.params=color
+comment3.target=void\ colorChange(java.lang.String)
+comment4.params=pressure
+comment4.target=void\ brake(int)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
