@@ -8,7 +8,7 @@ public class Election {
     
     public Election(String question) {
         if (question == null) {
-            throw new IllegalArgumentException("***  question missing!");
+            throw new IllegalArgumentException("***  Question missing!");
         }
         this.question = question;
         int yes = 0;
@@ -45,7 +45,7 @@ public class Election {
         try {
         System.out.println("* " + visualize(yes, yes + no) + " yes");
         System.out.println("* " + visualize(no, yes + no) + " no");
-        } catch (Exception e) {
+        } catch (NoVotesYetException e) {
             System.out.println(e.getMessage());
         }
     }
