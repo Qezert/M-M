@@ -1,0 +1,10 @@
+Opgave 3.1
+Man ville i denne situation gribe en checked exception, da der i java findes en prædefineret checked exception, FileNotFoundException, som tjekker hvorvidt det er muligt eller ej, at åbne filen koden gerne vil tilgå.
+
+Opgave 3.2
+Man ville her gribe en unchecked exception, da brugeren kun kan give et input i runtime. Derfor må exceptionen være en runtime/unchecked exception.
+
+Opgave 3.3
+Fejlen i strukturen er, at "FileSystemException"'en kommer efter "Exception" exceptionen. Dette er problematisk da "FileSystemException" er en subklasse af "Exception", hvilket pga substitutionsprincippet vil sige
+at "Exception" excpetionen vil gribe "FileSystemException"'s samt andre potentielle exceptions. Derfor vil det aldrig være muligt at gribe "FileSystemException"'en og udskrive dens fejlbesked.
+
